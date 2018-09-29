@@ -1,0 +1,12 @@
+[
+    {
+        "modid": "mobbanners",
+        "name": "Mob Banners",
+        "description": "Adds decorative banners awarded on kill.",
+        "version": "${version}",
+        "url": "https://minecraft.curseforge.com/projects/mob-banners",
+        "authorList": [
+            "darkhax"
+        ]
+    }
+]
