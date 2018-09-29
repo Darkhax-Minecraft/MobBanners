@@ -19,8 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
-@Mod(modid = MobBanners.MOD_ID, name = "Mob Banners", version = "@VERSION@")
-@EventBusSubscriber
+@Mod(modid = MobBanners.MOD_ID, name = "Mob Banners", version = "@VERSION@", dependencies = "required-after:bookshelf@[2.3.550,);", certificateFingerprint = "@FINGERPRINT@")
 public class MobBanners {
 
     public static final Logger LOG = LogManager.getLogger("Mob Banners");
