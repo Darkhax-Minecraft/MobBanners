@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "mobbanners:banner" },
+        "facing=south": { "model": "mobbanners:banner", "y": 180 },
+        "facing=west":  { "model": "mobbanners:banner", "y": 270 },
+        "facing=east":  { "model": "mobbanners:banner", "y": 90 }
+    }
+}
