@@ -1,7 +1,1 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "mobbanners:items/banner",
-		"layer1": "mobbanners:items/banner_outline"
-    }
-}
+{"parent":"item/generated","textures":{"layer0":"mobbanners:items/banner","layer1":"mobbanners:items/banner_outline"}}
