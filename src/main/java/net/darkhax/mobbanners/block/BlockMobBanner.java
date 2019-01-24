@@ -84,7 +84,7 @@ public class BlockMobBanner extends BlockBannerBase {
 
         if (eggInfo != null) {
 
-            if (player != null) {
+            if (player != null && BannerTrackingManager.clientData != null) {
 
                 final int kills = BannerTrackingManager.clientData.getKills(eggInfo.spawnedID);
 
