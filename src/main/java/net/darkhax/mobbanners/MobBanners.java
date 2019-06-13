@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 
 @Mod(modid = MobBanners.MOD_ID, name = "Mob Banners", version = "@VERSION@", dependencies = "required-after:bookshelf@[2.3.550,);", certificateFingerprint = "@FINGERPRINT@")
+@EventBusSubscriber(modid = MobBanners.MOD_ID)
 public class MobBanners {
 
     public static final Logger LOG = LogManager.getLogger("Mob Banners");
@@ -28,11 +29,13 @@ public class MobBanners {
     public static final NetworkHandler NETWORK = new NetworkHandler(MOD_ID);
     public static final RegistryHelper REGISTRY = new RegistryHelper(MOD_ID).setTab(CreativeTabs.MISC).enableAutoRegistration();
 
+    public static ConfigurationHandler config;
     public static Block blockMobBanner;
 
     @EventHandler
     public void preInit (FMLPreInitializationEvent event) {
 
+        config = new ConfigurationHandler(event.getSuggestedConfigurationFile());
         NETWORK.register(PacketSyncKill.class, Side.CLIENT);
         NETWORK.register(PacketSyncBanners.class, Side.CLIENT);
 

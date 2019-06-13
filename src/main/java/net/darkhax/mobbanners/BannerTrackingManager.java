@@ -48,7 +48,7 @@ public class BannerTrackingManager {
 
                 tracker.addKill(entityId, 1);
 
-                if (tracker.getKills(entityId) >= 50 && !tracker.isAwarded(entityId)) {
+                if (tracker.getKills(entityId) >= MobBanners.config.getKillsToObtain() && !tracker.isAwarded(entityId)) {
 
                     ItemHandlerHelper.giveItemToPlayer(player, BlockMobBanner.createBannerItem(EntityList.ENTITY_EGGS.get(entityId)));
                     tracker.setAwarded(entityId, true);
